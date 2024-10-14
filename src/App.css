@@ -1,0 +1,50 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+  .scrollBarInfo {
+    position: fixed;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: #fff;
+    color: black;
+    border-radius: 11px;
+    outline: 2px solid black;
+    left: 0;
+    top: 0;
+  }
+
+  .backToTopButton{
+    position: fixed;
+    display: none;
+    width: 40px;
+    aspect-ratio: 1;
+    background-color: #fff;
+    color: black;
+    font-size: 2rem;
+    border-radius: 11px;
+    outline: 2px solid black;
+    right: 30px;
+    bottom: 40px;
+    transition: .2s;
+  }
+  .backToTopButton:hover{
+    background-color: black;
+    color: white;
+    font-weight: 900;
+  }
+  .show{
+    display: block;
+  }
+}
